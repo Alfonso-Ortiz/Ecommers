@@ -12,9 +12,18 @@
       <!--CONTENT NAVBAR-->
 
       <section class="header">
+        <div class="menu-ham">
+          <div class="exit">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMNJREFUSEvtlN0NgkAQhD86sBMsQTuQSrUDLUE7sQQziSQn7h8mF1/gDbLMtzs7dwOdn6GzPhsgdfjvFp2AG/B0Wt0BB+DijRJNIPEzcAeOBkTiV2APTB4kAkhA3Y8GpBV/vKcwp8x2YEHkxtx5KK7CDKCaJUTfZEsqXgUsIXovia8FzLboP2/xX2GqWtR6LhFr8WZSM4CVFgl56Vo1QRTFKMIfkMpB8xbaQn46aOqk61WR3pSVgmzJFY2wZgOkFna36AUMCDQZmJpqFgAAAABJRU5ErkJggg=="
+            />
+          </div>
+          <a class="menu_ham_home" href="home">HOME</a>
+          <a href="products">PRODUCT</a>
+        </div>
         <div class="navbar">
           <div class="sub_nav">
-            <img src="./src/img/favicon.png" alt="" />
+            <a href="#"><img src="./src/img/favicon.png" alt="" /></a>
             <div class="nav_home">
               <i class="bx bx-home"></i>
               <a href="">Home</a>
@@ -55,7 +64,7 @@
             </svg>
 
             <svg
-              class="menu"
+              class="menu_hamburguesa"
               xmlns="http://www.w3.org/2000/svg"
               id="Isolation_Mode"
               data-name="Isolation Mode"
@@ -75,7 +84,7 @@
       <!-- CONTENT MAIN -->
 
       <section class="content_main">
-        <div class="content_main_one">
+        <div id="Home" class="content_main_one">
           <div class="sweater">
             <img height="230px" width="230px" src="./src/img/home.png" alt="" />
           </div>
@@ -98,7 +107,7 @@
           </div>
         </div>
 
-        <div class="products">
+        <div id="products" class="products">
           <div class="info">
             <div class="name">Show ALL</div>
             <div class="description">Show all products</div>
@@ -187,9 +196,16 @@
           </div>
         </div>
       </section>
+    </div>
 
-      <section class="content_footer">
-        <h2>Our information</h2>
+    <footer class="content_footer">
+      <div class="footer">
+        <div class="information">
+          <h2>Our information</h2>
+          <ul>
+            <li><a href="">Neiva - Huila, Colombia</a></li>
+          </ul>
+        </div>
         <div class="about_us">
           <h2>About Us</h2>
           <ul>
@@ -207,9 +223,30 @@
             <li><a href="">Sweatshirt</a></li>
           </ul>
         </div>
-        <h2>Social</h2>
-      </section>
-    </div>
+        <div class="social">
+          <h2>Social</h2>
+          <div class="redes">
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="
+            /></a>
+            <a href="https://twitter.com/home?lang=es" target="_blank"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUdJREFUSEvdleExBEEQhb+LgAzIABEgAkTgRIAIEAEhyAARkAGXAREgAuq7mrmanZuZ29uq/XNTdX92ut/r97qnb8LIZzIyPptHsA38rLDNmEvgFNgHPoFH4C7k+f05YuQWGWzAR4PkDTgs3Jsj4TXwUCLw8j0oOAMEyk+MqfFLMgsE8yJzBX9JplUoO7VMdU8Ndb/BgUVxOYHenWQAfvOnfQfAfYPgJRAsQlICm7cbwHYGvg8V36a5OcH3QOCY1mlwqQfaMLR68bSwM4F5D5wSG7Q1QMlXsLiTWloVTsp53qwehEv2lCzy2xHw2gMwDbF61S9tgdqycxJu1iA5rjzM5jZ1bH1s2tU6F2EXFWNqCrQpLrQauK/2qgWe90BQK97rYY0vVnDHunlKCqah0TYtkrnAbGC6NlZhz+837x+tl+x1gka36B/CnzgZFPaBJAAAAABJRU5ErkJggg=="
+            /></a>
+
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAX1JREFUSEvNlU0yBEEQhb+5gZUtToATYGOLA4jgBm6AEwg7O5zAWFrhBDgB4QJ+LkB8olLUVJTumkXHyIiKmumuypf5MvP1iIFtNLB/ZgawCBwCK2l1JfoIuE7TPnG2lsEecJ5O3QPvtYvpvQHMAWvp/z5wkSOUAF54AHS8nZy3lMmMx8AysJoHVAKIrmMvGHmf7QLHwAewAzwDl4As/FgJ8AK41iueBTZCTc6vgU3gBngFFoC7tC/9BfCVinWQAcjxbaXYOjsDPoH5FLnPrMdv4GUGApjyUQZgtFJm2vKsmY10Wq+N7OzUADq6SvyG8/AX3Sb38W5qADNxHmrtLHVvRcb/D2BwiqIlbUE5tzU1f58AT0VLN1GkppRt6sWYgShybdp7AfoGTSmJrMqu8rkAtrSrOsn29hbgJLZIRT7wOu2VihA7I1EZzajFdO68eL9T7KKAIdcCdcl1aFbsvXId0RqJhfaiHdRlKqmBOJTKyoTN7JPZwnvTmcEz+AZJz2cZU1H38wAAAABJRU5ErkJggg=="
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>© ACADEMLO. All rigths reserved</p>
+      </div>
+    </footer>
+
     <script src="./main.js"></script>
   </body>
 </html>
