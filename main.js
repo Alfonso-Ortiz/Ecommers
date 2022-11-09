@@ -25,7 +25,7 @@ iconMenu.addEventListener("click", () => {
 });
 
 exitMenu.addEventListener("click", () => {
-  unShowMenu.classList.toggle("unShow");
+  unShowMenu.classList.toggle("show");
 });
 
 bag.addEventListener("click", () => {
@@ -33,7 +33,7 @@ bag.addEventListener("click", () => {
 });
 
 exitCart.addEventListener("click", () => {
-  unShowCart.classList.toggle("cart_unshow");
+  unShowCart.classList.toggle("cart_show");
 });
 
 menuBag.addEventListener("click", () => {
@@ -41,7 +41,7 @@ menuBag.addEventListener("click", () => {
 });
 
 exitCartMenu.addEventListener("click", () => {
-  unShowCartMenu.classList.toggle("cart_menu_unshow");
+  unShowCartMenu.classList.toggle("cart_menu_show");
 });
 
 // bagHome.addEventListener("click", () => {

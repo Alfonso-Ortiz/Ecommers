@@ -102,8 +102,8 @@ img {
 
 .container .header .menu-ham .menu_bag {
   position: absolute;
-  right: 12%;
-  top: 3.3%;
+  right: 15%;
+  top: 3.2%;
   cursor: pointer;
 }
 
@@ -154,17 +154,13 @@ img {
   background-color: #ffffff;
   right: 0;
   top: 0;
-  transform: translateX(100%);
+  transform: translateX(150%);
   transition: 0.5s;
 }
 
 .container .header .cart_show {
   transform: translateX(0%);
   width: 100vw;
-}
-
-.container .header .cart_unshow {
-  transform: translateX(100%);
 }
 
 .container .header .cart .exit_cart {
@@ -206,7 +202,7 @@ img {
 .container .header .cart img {
   height: 250px;
   width: 350px;
-  position: relative;
+  margin-left: 4rem;
 }
 
 .container .header .menu-ham .cart_menu {
@@ -227,10 +223,6 @@ img {
 
 .container .header .menu-ham .cart_menu_show {
   transform: translateX(0%);
-}
-
-.container .header .menu-ham .cart_menu_unshow {
-  transform: translateX(100%);
 }
 
 .container .header .menu-ham .cart_menu .exit_cart_menu {
