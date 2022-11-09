@@ -1,13 +1,47 @@
+// Menú hamburguesa
 const iconMenu = document.querySelector(".menu_hamburguesa");
 const menu = document.querySelector(".menu-ham");
+// Exit menu hamburguesa
+const exitMenu = document.querySelector(".exit");
+const unShowMenu = document.querySelector(".menu-ham");
+// Carrito
+const bag = document.querySelector(".bag");
+const showCart = document.querySelector(".cart");
+// Exit carrito
+const exitCart = document.querySelector(".exit_cart");
+const unShowCart = document.querySelector(".cart");
+// Carrito en el menu hamburguesa
+const menuBag = document.querySelector(".menu_bag");
+const showCartMenu = document.querySelector(".cart_menu");
+// Exit carrito menu hamburguesa
+const exitCartMenu = document.querySelector(".exit_cart_menu");
+const unShowCartMenu = document.querySelector(".cart_menu");
+// Carrito menu hamburguesa desde el home
 
 iconMenu.addEventListener("click", () => {
   menu.classList.toggle("show");
 });
 
-const exitMenu = document.querySelector(".exit");
-const unShowMenu = document.querySelector(".menu-ham");
-
 exitMenu.addEventListener("click", () => {
   unShowMenu.classList.toggle("unShow");
 });
+
+bag.addEventListener("click", () => {
+  showCart.classList.toggle("cart_show");
+});
+
+exitCart.addEventListener("click", () => {
+  unShowCart.classList.toggle("cart_unshow");
+});
+
+menuBag.addEventListener("click", () => {
+  showCartMenu.classList.toggle("cart_menu_show");
+});
+
+exitCartMenu.addEventListener("click", () => {
+  unShowCartMenu.classList.toggle("cart_menu_unshow");
+});
+
+import "./js/mixitup.js";
+
+const clothes = [{}];

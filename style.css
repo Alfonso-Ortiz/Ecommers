@@ -72,13 +72,17 @@ img {
   height: 80px;
   min-width: 100vw;
   gap: 2rem;
-  box-shadow: 0px 7px 20px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 7px 20px -11px rgba(0, 0, 0, 0.3);
   z-index: 10000;
 }
 
 .container .header .navbar .sub_nav .nav_home,
 .container .header .navbar .sub_nav .nav_product {
   display: none;
+}
+
+.container .header .navbar .sub_nav .nav_home {
+  color: #e84959;
 }
 
 .container .header .menu-ham {
@@ -96,15 +100,20 @@ img {
   position: fixed;
 }
 
+.container .header .menu-ham .menu_bag {
+  position: absolute;
+  right: 12%;
+  top: 3.3%;
+  cursor: pointer;
+}
+
 .container .header .menu-ham .exit {
   display: flex;
   align-self: flex-end;
   height: 35px;
   width: 35px;
-  margin-right: 1rem;
-}
-
-.container .header .menu-ham .exit:hover {
+  margin-right: 1.2rem;
+  margin-top: 0.6rem;
   cursor: pointer;
 }
 
@@ -116,42 +125,6 @@ img {
   transform: translateX(100%);
 }
 
-/* .icon-menu {
-  font-size: 2rem;
-  display: flex;
-  height: 5rem;
-  position: fixed;
-  z-index: 1;
-  right: 15%;
-  width: 3rem;
-  cursor: pointer;
-  top: 0;
-  transition: 0.5s;
-}
-
-.container .content_header .navbar {
-  position: fixed;
-  width: 30%;
-  height: 60vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  left: 0;
-  top: 0;
-  padding-top: 2rem;
-
-  z-index: 1000;
-  transform: translateX(-100%);
-  transition: transform 0.5s;
-  background-color: rgba(40, 149, 212, 0.5);
-  border-radius: 1rem;
-}
-
-.container .content_header .activado {
-  transform: translateX(0);
-} */
-
 .container .header .menu-ham a {
   text-decoration: none;
   color: inherit;
@@ -160,9 +133,145 @@ img {
   font-family: "Roboto", sans-serif;
 }
 
+.container .header .menu-ham .menu_ham_home {
+  color: #e84959;
+}
+
 .container .header .menu-ham a:hover {
   color: #e84959;
   transition: 0.3s;
+}
+
+.container .header .cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  height: 100vh;
+  width: 32vw;
+  position: absolute;
+  background-color: #ffffff;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+
+.container .header .cart_show {
+  transform: translateX(0%);
+}
+
+.container .header .cart_unshow {
+  transform: translateX(100%);
+}
+
+.container .header .cart .exit_cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50px;
+  height: 50px;
+}
+
+.container .header .cart .exit_cart img {
+  height: 32px;
+  width: 32px;
+  right: 3.5%;
+  top: 3.2%;
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
+}
+
+.container .header .cart h2 {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.container .header .cart h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.container .header .cart p {
+  padding: 0 2.5rem;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.container .header .cart img {
+  height: 250px;
+  width: 350px;
+  position: relative;
+}
+
+.container .header .menu-ham .cart_menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  background-color: #ffffff;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  transition: 0.5s;
+}
+
+.container .header .menu-ham .cart_menu_show {
+  transform: translateX(0%);
+}
+
+.container .header .menu-ham .cart_menu_unshow {
+  transform: translateX(100%);
+}
+
+.container .header .menu-ham .cart_menu .exit_cart_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 50px;
+  height: 50px;
+}
+
+.container .header .menu-ham .cart_menu .exit_cart_menu img {
+  height: 32px;
+  width: 32px;
+  right: 3.5%;
+  top: 3.2%;
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
+}
+
+.container .header .menu-ham .cart_menu h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 2.3rem;
+}
+
+.container .header .menu-ham .cart_menu h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.container .header .menu-ham .cart_menu p {
+  padding: 0 3rem;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.container .header .menu-ham .cart_menu img {
+  height: 300px;
+  width: 420px;
+  position: relative;
 }
 
 .container .header .navbar .icons {
@@ -212,7 +321,7 @@ img {
 
 .container .content_main h1 {
   margin-top: 2rem;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 700;
 }
 
@@ -295,8 +404,20 @@ img {
 }
 
 .container .content_main .products .info .name {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 18px;
+  color: #2e2e2e;
+  text-transform: uppercase;
+}
+
+.container .content_main .products .info .name:hover {
+  cursor: pointer;
+  color: #e84959;
+  transition: 0.4s;
+}
+
+.container .content_main .products .info .description {
+  color: #6b6b6b;
 }
 
 .container .content_second_main .content_cards_products {
@@ -515,7 +636,7 @@ img {
     align-items: center;
   } */
 
-  .container .header .icons .menu {
+  .container .header .icons .menu_hamburguesa {
     display: none;
   }
 
