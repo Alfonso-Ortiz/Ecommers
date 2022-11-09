@@ -16,7 +16,9 @@ const showCartMenu = document.querySelector(".cart_menu");
 // Exit carrito menu hamburguesa
 const exitCartMenu = document.querySelector(".exit_cart_menu");
 const unShowCartMenu = document.querySelector(".cart_menu");
-// Carrito menu hamburguesa desde el home
+// Carrito menu hamburguesa desde el
+// const bagHome = document.querySelector(".bag");
+// const showCartHome = document.querySelector(".cart-menu");
 
 iconMenu.addEventListener("click", () => {
   menu.classList.toggle("show");
@@ -41,6 +43,10 @@ menuBag.addEventListener("click", () => {
 exitCartMenu.addEventListener("click", () => {
   unShowCartMenu.classList.toggle("cart_menu_unshow");
 });
+
+// bagHome.addEventListener("click", () => {
+//   showCartHome.classList.toggle("cart_show");
+// });
 
 import "./js/mixitup.js";
 

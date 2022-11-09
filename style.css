@@ -160,6 +160,7 @@ img {
 
 .container .header .cart_show {
   transform: translateX(0%);
+  width: 100vw;
 }
 
 .container .header .cart_unshow {
@@ -638,6 +639,11 @@ img {
 
   .container .header .icons .menu_hamburguesa {
     display: none;
+  }
+
+  .container .header .cart_show {
+    transform: translateX(0%);
+    width: 32vw;
   }
 
   .container .header .navbar {
