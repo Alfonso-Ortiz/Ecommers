@@ -275,4 +275,12 @@ contentcartTotal.addEventListener("click", (e) => {
   }
 });
 
-console.log(content_cards_products);
+//Darkmode
+
+const iconToggle = document.querySelector(".iconToggle");
+
+iconToggle.addEventListener("click", () => {
+  document.body.classList.toggle("darkmode")
+    ? iconToggle.classList.add("bx_sun")
+    : iconToggle.classList.remove("bx_sun");
+});
