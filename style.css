@@ -71,7 +71,7 @@ img {
   padding: 1rem;
   height: 80px;
   min-width: 100vw;
-  gap: 2rem;
+  gap: 13rem;
   box-shadow: 0px 7px 20px -11px rgba(0, 0, 0, 0.3);
   z-index: 10000;
 }
@@ -85,6 +85,14 @@ img {
   color: #e84959;
 }
 
+.container .header .menu-ham .nav_menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
 .container .header .menu-ham {
   display: flex;
   width: 100vw;
@@ -95,16 +103,39 @@ img {
   background-color: var(--L-background);
   gap: 1.8rem;
   z-index: 1000;
-  transform: translateX(100%);
+  transform: translateX(150%);
   transition: transform 0.5s;
   position: fixed;
 }
 
 .container .header .menu-ham .menu_bag {
-  position: absolute;
-  right: 15%;
-  top: 3.2%;
+  position: fixed;
+  right: 14%;
+  top: 2.3%;
   cursor: pointer;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+}
+
+.container .header .menu-ham .count_clothes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #262626;
+  color: white;
+  border-radius: 100%;
+  font-size: 11px;
+  height: 16px;
+  width: 16px;
+  top: 25%;
+  right: 2.8%;
+}
+
+.container .header .menu-ham .count_clothes {
+  margin: 0;
+  padding: 0;
 }
 
 .container .header .menu-ham .exit {
@@ -122,7 +153,7 @@ img {
 }
 
 .container .header .unShow {
-  transform: translateX(100%);
+  transform: translateX(150%);
 }
 
 .container .header .menu-ham a {
@@ -163,7 +194,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   left: 0%;
   gap: 1rem;
   border-radius: 1rem;
@@ -173,7 +204,7 @@ img {
 .container .header .cart h2 {
   align-self: center;
   margin-top: 4rem;
-  font-weight: bolds;
+  font-weight: bold;
 }
 
 .container .header .cart .contentcart_item .card {
@@ -288,6 +319,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 .container .header .cart .contentcart_total H3 {
@@ -336,7 +368,7 @@ img {
 .container .header .cart h2 {
   font-size: 25px;
   font-weight: 500;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .container .header .cart h3 {
@@ -346,13 +378,13 @@ img {
 
 .container .header .cart p {
   padding: 0 2.5rem;
-  font-size: 16px;
+  font-size: 15px;
   text-align: justify;
 }
 
 .container .header .cart img {
-  height: 250px;
-  width: 350px;
+  height: 230px;
+  width: 330px;
   margin-left: 4rem;
 }
 
@@ -420,16 +452,100 @@ img {
 
 .container .header .navbar .icons {
   display: flex;
-  gap: 2rem;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .container .header .navbar .icons:hover {
   cursor: pointer;
 }
 
+.container .header .navbar .icons svg {
+  margin-right: 2rem;
+}
+
 .container .header .navbar .icons svg:hover {
   transform: translateY(-0.2rem);
   box-shadow: 0px 22px 29px -12px rgb(0 0 0 / 75%);
+}
+
+.container .header .navbar .icons img {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  margin-right: 4.7rem;
+  margin-bottom: 0.2em;
+}
+
+.container .header .navbar .icons img:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0px 22px 29px -12px rgb(0 0 0 / 75%);
+}
+
+@media (min-width: 900px) {
+  .container .header .navbar .icons .countClothes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 0;
+    background-color: #262626;
+    color: white;
+    border-radius: 100%;
+    font-size: 11px;
+    height: 16px;
+    width: 16px;
+    margin-top: 0.5rem;
+  }
+  .container .header .navbar .icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .container .header .navbar .icons:hover {
+    cursor: pointer;
+  }
+
+  .container .header .navbar .icons svg {
+    margin-right: 1.5rem;
+  }
+
+  .container .header .navbar .icons svg:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0px 22px 29px -12px rgb(0 0 0 / 75%);
+  }
+
+  .container .header .navbar .icons img {
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2em;
+  }
+
+  .container .header .navbar .icons img:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0px 22px 29px -12px rgb(0 0 0 / 75%);
+  }
+}
+
+.container .header .navbar .icons .countClothes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #262626;
+  color: white;
+  border-radius: 100%;
+  font-size: 11px;
+  height: 16px;
+  width: 16px;
+  margin-top: 0.5rem;
+}
+
+.container .header .navbar .icons .menu_hamburguesa {
+  margin-left: 1.5rem;
 }
 
 .container .content_main {
@@ -627,8 +743,8 @@ img {
   .content_second_main
   .content_cards_products
   .card
-  .btn_nodrop
-  button {
+  .btn_plus
+  .btn_nodrop {
   cursor: no-drop;
 }
 

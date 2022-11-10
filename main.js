@@ -77,8 +77,20 @@ let sweaters = [
 const contentSweater = document.querySelector(".content_cards_products");
 const contentcartItem = document.querySelector(".contentcart_item");
 const contentcartTotal = document.querySelector(".contentcart_total");
+const countClothes = document.querySelector(".countClothes");
 
 let objCartShop = {};
+
+function countProduct() {
+  const arrayCartShop = Object.values(objCartShop);
+
+  let suma = arrayCartShop.reduce((acum, curr) => {
+    acum += curr.amount;
+    return acum;
+  }, 0);
+
+  countClothes.textContent = suma;
+}
 
 function printClothes() {
   let html = "";
@@ -177,6 +189,7 @@ function printClothesInCart() {
   contentcartItem.innerHTML = html;
 
   printTotal();
+  countProduct();
 }
 
 printClothes();
