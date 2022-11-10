@@ -366,8 +366,8 @@ img {
 .container .header .cart .exit_cart img {
   height: 32px;
   width: 32px;
-  right: 6.5%;
-  top: 4.5%;
+  right: 10%;
+  top: 8%;
   align-self: flex-end;
   position: absolute;
   cursor: pointer;
@@ -376,7 +376,7 @@ img {
 .container .header .cart h2 {
   font-size: 25px;
   font-weight: 500;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .container .header .cart h3 {
@@ -457,8 +457,9 @@ img {
 
 .container .header .menu-ham .cart_menu img {
   height: 300px;
-  width: 420px;
+  width: 380px;
   position: relative;
+  margin-left: 1.5rem;
 }
 
 .container .header .navbar .icons {
@@ -542,7 +543,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     gap: 1rem;
     overflow-y: scroll;
   }
@@ -714,7 +715,7 @@ img {
   border-radius: 1rem;
 }
 
-.container .content_second_main .content_cards_products .card {
+.container .content_second_main .content_cards_products .card .ho {
   box-shadow: 0px 0px 15px 1px rgba(201, 201, 201, 1);
   border-radius: 1rem;
 }
@@ -724,18 +725,20 @@ img {
   height: 230px;
   width: 250px;
   border-radius: 1rem;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   /* position: relative; */
+  padding: 0.1rem;
 }
 
 .container .content_second_main .content_cards_products .card .product img {
   height: 180px;
   width: 180px;
   transition: transform 0.5s;
-  margin-top: 1rem;
-  position: absolute;
-  z-index: 10000;
+  margin-top: 1.5rem;
+  margin-left: 2.3rem;
+  /* position: absolute; */
+  /* z-index: 10000; */
 }
 
 .container
@@ -780,7 +783,7 @@ img {
   font-size: 25px;
   transition: transform 0.5s;
   margin-right: 1rem;
-  position: absolute;
+  /* position: absolute; */
   display: inline-block;
 }
 
