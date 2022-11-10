@@ -39,6 +39,7 @@
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMNJREFUSEvtlN0NgkAQhD86sBMsQTuQSrUDLUE7sQQziSQn7h8mF1/gDbLMtzs7dwOdn6GzPhsgdfjvFp2AG/B0Wt0BB+DijRJNIPEzcAeOBkTiV2APTB4kAkhA3Y8GpBV/vKcwp8x2YEHkxtx5KK7CDKCaJUTfZEsqXgUsIXovia8FzLboP2/xX2GqWtR6LhFr8WZSM4CVFgl56Vo1QRTFKMIfkMpB8xbaQn46aOqk61WR3pSVgmzJFY2wZgOkFna36AUMCDQZmJpqFgAAAABJRU5ErkJggg=="
               />
             </div>
+
             <h2>My cart</h2>
             <img src="./src/img/empty-cart.png" alt="" />
             <h3>Your cart is empty</h3>
@@ -106,18 +107,21 @@
             </svg>
           </div>
           <div class="cart">
+            <h2><span>My Cart</span></h2>
+            <div class="contentcart_item"></div>
+            <div class="contentcart_total"></div>
             <div class="exit_cart">
               <img
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAMNJREFUSEvtlN0NgkAQhD86sBMsQTuQSrUDLUE7sQQziSQn7h8mF1/gDbLMtzs7dwOdn6GzPhsgdfjvFp2AG/B0Wt0BB+DijRJNIPEzcAeOBkTiV2APTB4kAkhA3Y8GpBV/vKcwp8x2YEHkxtx5KK7CDKCaJUTfZEsqXgUsIXovia8FzLboP2/xX2GqWtR6LhFr8WZSM4CVFgl56Vo1QRTFKMIfkMpB8xbaQn46aOqk61WR3pSVgmzJFY2wZgOkFna36AUMCDQZmJpqFgAAAABJRU5ErkJggg=="
               />
             </div>
-            <h2>My cart</h2>
+            <!-- <h2>My cart</h2>
             <img src="./src/img/empty-cart.png" alt="" />
             <h3>Your cart is empty</h3>
             <p>
               You can add items to your cart by clicking on the "+" button on
               the product page.
-            </p>
+            </p> -->
           </div>
         </div>
       </section>
@@ -172,70 +176,7 @@
       </section>
 
       <section class="content_second_main">
-        <div class="content_cards_products">
-          <div class="card ho">
-            <div class="product">
-              <img src="./src/img/featured1.png" alt="" />
-            </div>
-
-            <div class="btn_plus">
-              <button class="plus">+</button>
-            </div>
-
-            <div class="footer_product">
-              <div class="price_stock">
-                <h3>$14.00</h3>
-                <h4>|</h4>
-                <p>stock:9</p>
-              </div>
-              <div class="type">
-                <p>Hoodies</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card sh">
-            <div class="product">
-              <img src="./src/img/featured2.png" alt="" />
-            </div>
-
-            <div class="btn_plus">
-              <button class="plus">+</button>
-            </div>
-
-            <div class="footer_product">
-              <div class="price_stock">
-                <h3>$24.00</h3>
-                <h4>|</h4>
-                <p>stock:9</p>
-              </div>
-              <div class="type">
-                <p>Shirts</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card sw">
-            <div class="product">
-              <img src="./src/img/featured3.png" alt="" />
-            </div>
-
-            <div class="btn_plus">
-              <button class="plus">+</button>
-            </div>
-
-            <div class="footer_product">
-              <div class="price_stock">
-                <h3>$54.00</h3>
-                <h4>|</h4>
-                <p>stock:9</p>
-              </div>
-              <div class="type">
-                <p>Sweartshirts</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="content_cards_products"></div>
       </section>
     </div>
 
@@ -297,3 +238,20 @@
     <script src="./main.js" type="module"></script>
   </body>
 </html>
+<!-- 
+<article class="products__card hoodies">
+  <div class="products__shape">
+    <img src="assets/img/featured1.png" alt="Hoodies" class="products__img" />
+  </div>
+
+  <div class="products__data">
+    <h2 class="products__price">
+      $14.00 <span class="products__quantity">| Stock: 10</span>
+    </h2>
+    <h3 class="products__name">Hoodies</h3>
+
+    <button class="button products__button" data-id="1">
+      <i class="bx bx-plus"></i>
+    </button>
+  </div>
+</article> -->
