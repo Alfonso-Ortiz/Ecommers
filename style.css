@@ -37,8 +37,8 @@
 
 body {
   position: relative;
-  background-color: var(--L-background);
-  color: var(--L-black);
+  background-color: var(--color);
+  color: var(--L-background);
   transition: 0.3s;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -47,8 +47,8 @@ body {
 }
 
 body.darkmode {
-  background-color: var(--color);
-  color: var(--L-background);
+  background-color: var(--L-background);
+  color: var(--color);
 }
 
 img {
