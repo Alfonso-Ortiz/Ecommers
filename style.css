@@ -283,11 +283,14 @@ img {
   font-size: 13px;
 }
 
-.container .header .cart .scroll_item .card .body_product .footer_product {
+.container .header .cart .card .body_product .footer_product {
   display: flex;
   justify-content: flex-start;
   gap: 1rem;
   padding: 0;
+}
+.container .header .cart .contentcart_item .card .footer_product .btn_del {
+  margin-bottom: 1.8rem;
 }
 
 .container
@@ -533,7 +536,7 @@ img {
     justify-content: center;
     align-items: center;
     height: 90px;
-    width: 355px;
+    width: 380px;
     left: 0%;
   }
 
@@ -953,7 +956,7 @@ img {
 
   .container .header .cart_show {
     transform: translateX(0%);
-    width: 30vw;
+    width: 32vw;
   }
 
   .container .header .navbar {
